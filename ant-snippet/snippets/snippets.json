@@ -1,0 +1,22 @@
+{
+	"Form Item": {
+		"prefix": "ant-fi",
+		"body": [
+			"<FormItem {...${1:layout}} label=\"${2:label to show}\">",
+			"\t{getFieldDecorator('${3:variable name}', {",
+			"\t\trules: [",
+			"\t\t\t{",
+			"\t\t\t\ttype: '${4:type of input}',",
+			"\t\t\t\tmessage: 'The input is not valid $4!'",
+			"\t\t\t},",
+			"\t\t\t{",
+			"\t\t\t\trequired: true,",
+			"\t\t\t\tmessage: 'Please input your E-mail!'",
+			"\t\t\t}",
+			"\t\t]",
+			"\t})(${0: component})}",
+			"</FormItem>;"
+		],
+		"description": "Snippet for creating ant form item"
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "crzy-snippets",
+	"displayName": "crzy-snippets",
+	"description": "Snippets for react, node and ant design",
+	"version": "0.0.1",
+	"publisher": "mshirazab",
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": ["Snippets"],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/react.json"
+			}
+		]
+	}
+}

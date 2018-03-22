@@ -1,0 +1,21 @@
+{
+    "name": "ant-snippet",
+    "displayName": "ant-snippet",
+    "description": "Snippets for people using ant-design",
+    "version": "0.0.1",
+    "publisher": "mshirazab",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

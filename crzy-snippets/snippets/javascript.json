@@ -1,0 +1,12 @@
+{
+  "Create an arrow function": {
+    "prefix": "af",
+    "body": "($1)=>{$0}",
+    "description": "create an arrow function"
+  },
+  "Require a Module": {
+    "prefix": "req",
+    "body": "const $1 = require('$1');",
+    "description": "Require a module"
+  }
+}

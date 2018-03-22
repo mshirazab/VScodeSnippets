@@ -1,0 +1,87 @@
+{
+	"Stateless Container": {
+		"prefix": "contless",
+		"body": [
+			"import React from 'react';",
+			"import { connect } from 'react-redux';",
+			"import * as actions from '../actions';",
+			"$3",
+			"",
+			"const ${1:App} = props => {",
+			"\t${0}",
+			"};",
+			"",
+			"function mapStateToProps(state) {",
+			"\t${2}",
+			"}",
+			"export default connect(mapStateToProps, actions)(${1:App});"
+		],
+		"description": "Create a container without state"
+	},
+	"Stateful Container": {
+		"prefix": "cont",
+		"body": [
+			"import React, { Component } from 'react';",
+			"import * as actions from '../actions';",
+			"$3",
+			"",
+			"class ${1:App} extends Component {",
+			"\t$0",
+			"}",
+			"",
+			"function mapStateToProps(state) {",
+			"\t$2",
+			"}",
+			"export default connect(mapStateToProps, actions)(${1:App});"
+		],
+		"description": "Create a container with state"
+	},
+	"Stateless component": {
+		"prefix": "compless",
+		"body": [
+			"import React from 'react';",
+			"$2",
+			"",
+			"const ${1:App} = () => {",
+			"\t$0",
+			"};",
+			"",
+			"export default ${1:App};"
+		],
+		"description": "Create a stateless component"
+	},
+	"Stateful component": {
+		"prefix": "comp",
+		"body": [
+			"import React, { Component } from 'react';",
+			"$2",
+			"",
+			"class ${1:App} extends Component {",
+			"\t$0",
+			"}",
+			"",
+			"export default ${1:App};"
+		],
+		"description": "Create a stateful component"
+	},
+	"Responsive Component": {
+		"prefix": "responsive",
+		"body": [
+			"state = { width: 0, height: 0 };",
+			"",
+			"componentDidMount() {",
+			"\tthis.updateWindowDimensions();",
+			"\twindow.addEventListener('resize', this.updateWindowDimensions);",
+			"}",
+			"",
+			"componentWillUnmount() {",
+			"\twindow.removeEventListener('resize', this.updateWindowDimensions);",
+			"}",
+			"",
+			"updateWindowDimensions = () => {",
+			"\tthis.setState({ width: window.innerWidth, height: window.innerHeight });",
+			"}"
+		],
+		"description": "Get the width and height of the window"
+	}
+}
